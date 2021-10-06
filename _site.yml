@@ -9,5 +9,6 @@ navbar:
 output_dir: "."
 output:
   html_document:
+    css: styles.css
     theme: cosmo
     highlight: textmate

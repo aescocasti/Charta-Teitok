@@ -1,3 +1,93 @@
 # Etiquetas
+***
 
-1. Numeración de hoja
+1. Numeración de hoja   
+  {h 1r} &rarr; ```<pb n="1r" facs="h1r.jpg" id="e-*"/>```
+<br/>  
+2. Numeración de columna  
+   {a} &rarr; ```<cb n="a"/>```  
+<br/>
+3. Numeración de línea   
+  {1} &rarr; ```<lb n="1" id="e-*"/>```
+<br/>  
+4. Intervención en el margen  
+ [margen: texto] &rarr; ```<add place="margen">texto</add>```
+<br/>  
+5. Salto de línea en el margen    
+[margen: texto1 | texto2] &rarr; ```<add place="margen">texto1<lb id="e-*"/>texto2</add>```
+<br/>  
+5. Interlineado  
+[interlineado: texto] &rarr; ```<add place="interlineado">texto</add>```
+<br/>  
+6. Título  
+[título: texto] &rarr; ```<div type="título">texto</div>```
+<br/>  
+7. Encabezamiento  
+[encabezamiento: texto] &rarr; ```<div type="encabezamiento">texto</div>```
+<br/>  
+8. Palabra  
+palabra &rarr; ```<tok id="w-*">palabra</tok>```
+<br/>  
+9. Abreviaturas  
+q\<ui\>en &rarr;```<tok form="qen" fform="quien" id="w-*" >q<ex>ui</ex>en</tok>```
+<br/>   
+10. Unión irregular de palabras  
+dela&rarr;```<tok nform="de la" id="w-*">dela<dtok id="w-*-1" form="de"/><dtok
+id="w-*-2" form="la"/></tok>```
+<br/>  
+11. Salto de línea en medio de una palabra  
+pala{2}bra &rarr; ```<tok id="w-*">pala<lb n="2" id="e-*"/>bra</tok>```
+<br/>  
+12. Cambio de lengua  
+[lat.: duobus] &rarr; ```<foreign xml:lang="la">
+<tok id="w-*">duobus</tok>
+</foreign>```
+<br/>  
+13. Firma  
+[firma: Francisco]&rarr;``` <signed><tok id="w-*">Francisco</tok></signed>```
+<br/>  
+14. Signos o elementos especiales
+[rúbrica] &rarr; ```<figure type="rúbrica"/>```  
+[signo] &rarr; ```<figure type="signo"/>```  
+[sello] &rarr; ```<figure type="sello"/>```  
+[quirógrafo] &rarr; ```<figure type="quirógrafo"/>```   
+[crismón] &rarr; ```<figure type="crismón"/>``` 
+<br/>  
+15. Impreso  
+[impreso: texto] &rarr; ```<hi rend="impreso"><tok id="w-*">texto</tok>```
+<br/>  
+16. Indicaciones sobre intervenciones en el texto  
+[tachado] &rarr; ```<del type="tachado"/>```  
+[tachado: texto] &rarr; ```<del type="tachado">texto</del>```  
+[raspado] &rarr; ```<del type="raspado"/>```  
+[raspado: texto] &rarr; ```<del type="raspado">texto</del>```  
+[subpuntuado] &rarr; ```[subpuntuado] <del type="subpuntuado"/>```  
+[subpuntuado: texto] &rarr; ```[subpuntuado: texto] <del type="subpuntuado">texto</del>```
+<br/>  
+17. Conjeturas   
+<br/> 
+<ins>Con seguridad</ins>:  
+[ilegible: palabra]&rarr; ```<supplied reason="ilegible"><tok id="w-*">palabra</tok></supplied>```  
+[roto: palabra]&rarr; ```<supplied reason="roto"><tok id="w-*">palabra</tok></supplied>```  
+[doblez: palabra]&rarr; ```<supplied reason="doblez"><tok id="w-*">palabra</tok></supplied>```  
+[mancha: palabra]&rarr;```<supplied reason="mancha"><tok id="w-*">palabra</tok></supplied>```  
+<br/> 
+<ins>Con dudas</ins>:  
+[duda: palabra]&rarr;``` <unclear><tok id="w-*">palabra</tok></unclear>```  
+[duda ilegible: palabra]&rarr;```<unclear reason="ilegible"><tok id="w-*">palabra</tok></unclear> ```  
+[duda roto: palabra]&rarr;```<unclear reason="roto"><tok id="w-*">palabra</tok></unclear> ```  
+[duda doblez: palabra]&rarr;```<unclear reason="doblez"><tok id="w-*">palabra</tok></unclear> ```
+[duda mancha: palabra]&rarr;```<unclear reason="mancha"><tok id="w-*">palabra</tok></unclear> ``` 
+<br/>   
+
+18. Deterioro  
+[***] &rarr;``` <gap reason="ilegible"/>``` 
+\* &rarr;```<gap reason="ilegible" extent="1 char"/> ```   
+\*\* &rarr;``` <gap reason="ilegible" extent="2 chars"/>```   
+\*\*\* &rarr;```<gap reason="ilegible" extent="3 chars"/> ```  
+\*\*\*\* &rarr;``` <gap reason="ilegible" extent="4 chars"/>```  
+\*\*\*\*\* &rarr;``` <gap reason="ilegible" extent="5 chars"/>```  
+\*\*\*\*\*\* &rarr;``` <gap reason="ilegible" extent="6 or more chars"/>```  
+[roto] &rarr; ```<gap reason="roto"/> ```  
+[doblez] &rarr; ```<gap reason="doblez"/> ```  
+[mancha] &rarr; ``` <gap reason="mancha"/>```  

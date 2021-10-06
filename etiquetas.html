@@ -57,6 +57,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="styles.css" type="text/css" />
 
 
 
@@ -265,8 +266,88 @@ $(document).ready(function () {
 
 <div id="etiquetas" class="section level1">
 <h1>Etiquetas</h1>
+<hr />
 <ol style="list-style-type: decimal">
-<li>Numeración de hoja</li>
+<li><p>Numeración de hoja<br />
+{h 1r} → <code>&lt;pb n="1r" facs="h1r.jpg" id="e-*"/&gt;</code> <br/><br />
+</p></li>
+<li><p>Numeración de columna<br />
+{a} → <code>&lt;cb n="a"/&gt;</code><br />
+<br/></p></li>
+<li><p>Numeración de línea<br />
+{1} → <code>&lt;lb n="1" id="e-*"/&gt;</code> <br/><br />
+</p></li>
+<li><p>Intervención en el margen<br />
+[margen: texto] → <code>&lt;add place="margen"&gt;texto&lt;/add&gt;</code> <br/><br />
+</p></li>
+<li><p>Salto de línea en el margen<br />
+[margen: texto1 | texto2] → <code>&lt;add place="margen"&gt;texto1&lt;lb id="e-*"/&gt;texto2&lt;/add&gt;</code> <br/><br />
+</p></li>
+<li><p>Interlineado<br />
+[interlineado: texto] → <code>&lt;add place="interlineado"&gt;texto&lt;/add&gt;</code> <br/><br />
+</p></li>
+<li><p>Título<br />
+[título: texto] → <code>&lt;div type="título"&gt;texto&lt;/div&gt;</code> <br/><br />
+</p></li>
+<li><p>Encabezamiento<br />
+[encabezamiento: texto] → <code>&lt;div type="encabezamiento"&gt;texto&lt;/div&gt;</code> <br/><br />
+</p></li>
+<li><p>Palabra<br />
+palabra → <code>&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;</code> <br/><br />
+</p></li>
+<li><p>Abreviaturas<br />
+q&lt;ui&gt;en →<code>&lt;tok form="qen" fform="quien" id="w-*" &gt;q&lt;ex&gt;ui&lt;/ex&gt;en&lt;/tok&gt;</code> <br/><br />
+</p></li>
+<li><p>Unión irregular de palabras<br />
+dela→<code>&lt;tok nform="de la" id="w-*"&gt;dela&lt;dtok id="w-*-1" form="de"/&gt;&lt;dtok id="w-*-2" form="la"/&gt;&lt;/tok&gt;</code> <br/><br />
+</p></li>
+<li><p>Salto de línea en medio de una palabra<br />
+pala{2}bra → <code>&lt;tok id="w-*"&gt;pala&lt;lb n="2" id="e-*"/&gt;bra&lt;/tok&gt;</code> <br/><br />
+</p></li>
+<li><p>Cambio de lengua<br />
+[lat.: duobus] → <code>&lt;foreign xml:lang="la"&gt; &lt;tok id="w-*"&gt;duobus&lt;/tok&gt; &lt;/foreign&gt;</code> <br/><br />
+</p></li>
+<li><p>Firma<br />
+[firma: Francisco]→<code>&lt;signed&gt;&lt;tok id="w-*"&gt;Francisco&lt;/tok&gt;&lt;/signed&gt;</code> <br/><br />
+</p></li>
+<li><p>Signos o elementos especiales [rúbrica] → <code>&lt;figure type="rúbrica"/&gt;</code><br />
+[signo] → <code>&lt;figure type="signo"/&gt;</code><br />
+[sello] → <code>&lt;figure type="sello"/&gt;</code><br />
+[quirógrafo] → <code>&lt;figure type="quirógrafo"/&gt;</code><br />
+[crismón] → <code>&lt;figure type="crismón"/&gt;</code> <br/><br />
+</p></li>
+<li><p>Impreso<br />
+[impreso: texto] → <code>&lt;hi rend="impreso"&gt;&lt;tok id="w-*"&gt;texto&lt;/tok&gt;</code> <br/><br />
+</p></li>
+<li><p>Indicaciones sobre intervenciones en el texto<br />
+[tachado] → <code>&lt;del type="tachado"/&gt;</code><br />
+[tachado: texto] → <code>&lt;del type="tachado"&gt;texto&lt;/del&gt;</code><br />
+[raspado] → <code>&lt;del type="raspado"/&gt;</code><br />
+[raspado: texto] → <code>&lt;del type="raspado"&gt;texto&lt;/del&gt;</code><br />
+[subpuntuado] → <code>[subpuntuado] &lt;del type="subpuntuado"/&gt;</code><br />
+[subpuntuado: texto] → <code>[subpuntuado: texto] &lt;del type="subpuntuado"&gt;texto&lt;/del&gt;</code> <br/><br />
+</p></li>
+<li><p>Conjeturas<br />
+<br/> <ins>Con seguridad</ins>:<br />
+[ilegible: palabra]→ <code>&lt;supplied reason="ilegible"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/supplied&gt;</code><br />
+[roto: palabra]→ <code>&lt;supplied reason="roto"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/supplied&gt;</code><br />
+[doblez: palabra]→ <code>&lt;supplied reason="doblez"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/supplied&gt;</code><br />
+[mancha: palabra]→<code>&lt;supplied reason="mancha"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/supplied&gt;</code><br />
+<br/> <ins>Con dudas</ins>:<br />
+[duda: palabra]→<code>&lt;unclear&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/unclear&gt;</code><br />
+[duda ilegible: palabra]→<code>&lt;unclear reason="ilegible"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/unclear&gt;</code><br />
+[duda roto: palabra]→<code>&lt;unclear reason="roto"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/unclear&gt;</code><br />
+[duda doblez: palabra]→<code>&lt;unclear reason="doblez"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/unclear&gt;</code> [duda mancha: palabra]→<code>&lt;unclear reason="mancha"&gt;&lt;tok id="w-*"&gt;palabra&lt;/tok&gt;&lt;/unclear&gt;</code> <br/></p></li>
+<li><p>Deterioro<br />
+[***] →<code>&lt;gap reason="ilegible"/&gt;</code> * →<code>&lt;gap reason="ilegible" extent="1 char"/&gt;</code><br />
+** →<code>&lt;gap reason="ilegible" extent="2 chars"/&gt;</code><br />
+*** →<code>&lt;gap reason="ilegible" extent="3 chars"/&gt;</code><br />
+**** →<code>&lt;gap reason="ilegible" extent="4 chars"/&gt;</code><br />
+***** →<code>&lt;gap reason="ilegible" extent="5 chars"/&gt;</code><br />
+****** →<code>&lt;gap reason="ilegible" extent="6 or more chars"/&gt;</code><br />
+[roto] → <code>&lt;gap reason="roto"/&gt;</code><br />
+[doblez] → <code>&lt;gap reason="doblez"/&gt;</code><br />
+[mancha] → <code>&lt;gap reason="mancha"/&gt;</code></p></li>
 </ol>
 </div>
 
