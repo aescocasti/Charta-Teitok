@@ -1,0 +1,12 @@
+name: "Etiquetas Charta/Teitok"
+navbar:
+  title: "Etiquetas Charta/Teitok"
+  left:
+    - text: "Inicio"
+      href: index.html
+    - text: "Etiquetas"
+      href: etiquetas.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate 
