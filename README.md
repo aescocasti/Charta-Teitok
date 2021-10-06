@@ -1,2 +1,2 @@
-# Charta-Teitok.github.io
+# Charta-Teitok
 Etiquetado Charta/Teitok
