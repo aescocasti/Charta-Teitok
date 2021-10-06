@@ -6,8 +6,8 @@ navbar:
       href: index.html
     - text: "Etiquetas"
       href: etiquetas.html
+output_dir: "."
 output:
   html_document:
     theme: cosmo
     highlight: textmate
-output_dir: "docs"
