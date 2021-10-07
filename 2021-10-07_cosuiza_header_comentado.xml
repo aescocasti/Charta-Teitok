@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!--Elemento raíz -->
+   <teiHeader>
+      <!-- Contiene metadatos-->
+      <fileDesc>
+         <!-- Contiene la descripción bibliográfica de la edición digital. Obligatorio-->
+         <titleStmt>
+            <!-- Título y responsables de la edición digital. Obligatorio-->
+            <title></title>
+            <funder></funder> <!-- Individuo o institución responsable del financiamiento del proyecto -->
+            <respStmt>
+               <!-- Declaración de responsabilidad -->
+               <resp n="transcriber">Transcriptor</resp> <!-- Tipo de responsabilidad-->
+               <name></name> <!-- Nombre y apellido de la persona responsable de la tarea-->
+            </respStmt>
+            <respStmt>
+               <resp n="reviewer1">Revisor 1</resp>
+               <name></name>
+            </respStmt>
+            <respStmt>
+               <resp n="reviewer2">Revisor 2</resp>
+               <name></name>
+            </respStmt>
+            <respStmt>
+               <resp n="XMLconverter">Conversor a XML</resp>
+               <name></name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <!-- Contiene la información relativa a la publicación de la edición digital. Obligatorio-->
+            <publisher>
+               <!-- Información relativa a la organización responsable de la edición digital -->
+               <orgName type="group">GRAFILA</orgName> <!-- Nombre de la organización-->
+               <orgName type="institution">Universidad de Lausana</orgName>
+            </publisher>
+            <pubPlace>Lausana</pubPlace> <!-- Lugar de publicación de la edición digital-->
+            <idno type="corpus">COSUIZA</idno>
+            <idno type="corpus-num"></idno> <!-- Número identificador de la edición digital-->
+            <distributor></distributor> <!-- Nombre de individuo o institución responsable de la distribución de la edición-->
+            <availability>
+               <p>Licencia CREATIVE COMMONS</p>
+            </availability> <!-- Distribución o licencia (en elemento <p>-->
+         </publicationStmt>
+         <sourceDesc>
+            <!-- Contiene la información relativa a la fuente de la edición digital. Obligatorio-->
+            <msDesc>
+               <!-- Contiene la descripción de un manuscrito-->
+               <msIdentifier>
+                  <!-- Contiene la información que permite identificar el manuscrito fuente-->
+                  <country>Suiza</country>
+                  <region type="canton"></region> <!-- Región. Type cantón en el caso de Suiza-->
+                  <settlement></settlement> <!-- Ciudad, comuna-->
+                  <repository></repository> <!-- Biblioteca o archivo-->
+                  <idno></idno> <!-- Identificador, fondo, signatura-->
+               </msIdentifier>
+               <msContents>
+                  <!-- Contiene información relativa al contenido de un manuscrito-->
+                  <summary></summary> <!-- Resumen-->
+                  <msItem class="original">
+                     <!-- Esta class para la mayoría de los documentos. También podría ser copia-->
+                     <editor>
+                        <persName type="escribano/notario"></persName> <!-- Nombre del scriptor (escribano, notario)-->
+                     </editor>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <!-- Descripción física del manuscrito-->
+                  <objectDesc form="ms">
+                     <!-- Tipo de objeto (ms, letter)-->
+                     <supportDesc material="paper">
+                        <!-- Material-->
+                        <extent>
+                           <!-- Dimensión del manuscrito-->
+                           <note></note> <!-- En prosa: cantidad de hojas-->
+                           <dimensions scope="all" unit="mm">
+                              <!-- Unidad de medida-->
+                              <height></height> <!-- Altura-->
+                              <width></width> <!-- Ancho-->
+                           </dimensions>
+                        </extent>
+                        <condition><p></p></condition> <!-- Estado de conservación en elemento <p>-->
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc hands="1"> <!-- Número de manos-->
+                     <handNote resp="#h1" />  <!-- resp para el identificador de mano-->
+                  </handDesc>
+                  <bindingDesc> <!-- Descripción encuadernación-->
+                     <binding><p></p></binding> <!-- Información relativa a la encuadernación en elemento <p>-->
+                  </bindingDesc>
+               </physDesc>
+               <history> <!-- Contiene elementos que describen la historia de un manuscrito-->
+                  <origin> <!-- Información relativa a su origen-->
+                     <origDate when="aaaa" type="explicit"></origDate> <!-- Fecha: when="año" y contenido del elemento con fecha completa: 1342 diciembre 23-->
+                     <origPlace type="explicit">
+                        <placeName type="settlement"></placeName> <!-- Ciudad-->
+                        <region type="region"></region> <!-- Región-->
+                        <country></country> <!-- País-->
+                        <geo></geo> <!-- Coordenadas: lat-long-->
+                     </origPlace>
+                  </origin>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc> <!-- Información que documenta la relación entre el manuscrito y la edición digital-->
+         <projectDesc> <!-- Propósito de la edición digital-->
+            <p>Edición electrónica preparada para la investigación CHARTA-TEI</p>
+         </projectDesc>
+         <editorialDecl> <!-- Detalles sobre los principios editoriales de la codificación-->
+            <p>Este documento sigue los criterios de edición CHARTA adaptados para el estándar internacional de marcación electrónica TEI http://www.tei-c.org/index.xml.</p>
+         </editorialDecl>
+         <classDecl> <!-- Contiene la tipología CHARTA de clasificación de documentos -->
+            <taxonomy xml:id="Tip-CH">
+               <bibl>Tipología CHARTA, propuesta de octubre de 2013</bibl> <!-- Citación-->
+               <category xml:id="tex-leg"> <!-- Textos legistativos-->
+                  <category xml:id="tex-leg-ord">
+                     <catDesc>Ordenanzas</catDesc>
+                  </category>
+                  <category xml:id="tex-leg-fue">
+                     <catDesc>Fueros</catDesc>
+                  </category>
+                  <category xml:id="tex-leg-pri">
+                     <catDesc>Privilegios</catDesc>
+                  </category>
+                  <category xml:id="tex-leg-cpue">
+                     <catDesc>Cartas pueblas</catDesc>
+                  </category>
+                  <category xml:id="tex-leg-pra">
+                     <catDesc>Pragmáticas</catDesc>
+                  </category>
+               </category>
+               <category xml:id="car-com"> <!-- Cartas de compraventa y contratos-->
+                  <category xml:id="car-com-con">
+                     <catDesc>Contratos</catDesc>
+                  </category>
+                  <category xml:id="car-com-com">
+                     <catDesc>Compraventas</catDesc>
+                  </category>
+                  <category xml:id="car-com-ces">
+                     <catDesc>Cesiones</catDesc>
+                  </category>
+                  <category xml:id="car-com-don">
+                     <catDesc>Donaciones</catDesc>
+                  </category>
+                  <category xml:id="car-com-conc">
+                     <catDesc>Conciertos</catDesc>
+                  </category>
+                  <category xml:id="car-com-acu">
+                     <catDesc>Acuerdos</catDesc>
+                  </category>
+                  <category xml:id="car-com-per">
+                     <catDesc>Permutas</catDesc>
+                  </category>
+                  <category xml:id="car-com-tru">
+                     <catDesc>Truques</catDesc>
+                  </category>
+                  <category xml:id="car-com-pac">
+                     <catDesc>Pactos</catDesc>
+                  </category>
+                  <category xml:id="car-com-int">
+                     <catDesc>Intercambios de bienes</catDesc>
+                  </category>
+                  <category xml:id="car-com-ccen">
+                     <catDesc>Cartas de censo</catDesc>
+                  </category>
+               </category>
+               <category xml:id="act-decl"> <!-- Actas y declaraciones-->
+                  <category xml:id="act-decl-muni">
+                     <catDesc>Actas municipales</catDesc>
+                  </category>
+                  <category xml:id="act-decl-judi">
+                     <catDesc>Actas judiciales</catDesc>
+                  </category>
+                  <category xml:id="act-decl-dtes">
+                     <catDesc>Declaraciones de testigos</catDesc>
+                  </category>
+                  <category xml:id="act-decl-inte">
+                     <catDesc>Interrogatorios</catDesc>
+                  </category>
+                  <category xml:id="act-decl-info">
+                     <catDesc>Informaciones</catDesc>
+                  </category>
+                  <category xml:id="act-decl-peti">
+                     <catDesc>Peticiones</catDesc>
+                  </category>
+                  <category xml:id="act-decl-jura">
+                     <catDesc>Juramentos</catDesc>
+                  </category>
+                  <category xml:id="act-decl-test">
+                     <catDesc>Testimonios</catDesc>
+                  </category>
+                  <category xml:id="act-decl-sent">
+                     <catDesc>Sentencias</catDesc>
+                  </category>
+                  <category xml:id="act-decl-apel">
+                     <catDesc>Apelaciones</catDesc>
+                  </category>
+                  <category xml:id="act-decl-renu">
+                     <catDesc>Renuncias a actos jurídicos</catDesc>
+                  </category>
+                  <category xml:id="act-decl-acat">
+                     <catDesc>Acatamientos de sentencias</catDesc>
+                  </category>
+                  <category xml:id="act-decl-inst">
+                     <catDesc>Instrucciones</catDesc>
+                  </category>
+               </category>
+               <category xml:id="car-pri"> <!-- Cartas privadas-->
+                  <category xml:id="car-pri-pri">
+                     <catDesc>Cartas privadas</catDesc>
+                  </category>
+                  <category xml:id="car-pri-spu">
+                     <catDesc>Cartas semipúblicas</catDesc>
+                  </category>
+                  <category xml:id="car-pri-sec">
+                     <catDesc>Cartas secretas</catDesc>
+                  </category>
+               </category>
+               <category xml:id="tes-inv"> <!-- Testamentos e inventarios-->
+                  <category xml:id="tes-inv-inv">
+                     <catDesc>Inventarios</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-lis">
+                     <catDesc>Listados</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-alm">
+                     <catDesc>Almonedas</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-tes">
+                     <catDesc>Testamentos</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-cod">
+                     <catDesc>Codicilos</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-mtes">
+                     <catDesc>Mandas testamentarias</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-cue">
+                     <catDesc>Cuentas</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-cpob">
+                     <catDesc>Censos de población</catDesc>
+                  </category>
+                  <category xml:id="tes-inv-des">
+                     <catDesc>Deslindes y amojonamientos</catDesc>
+                  </category>
+               </category>
+               <category xml:id="inf-rel"> <!-- Relaciones e informes-->
+                  <category xml:id="inf-rel-rel">
+                     <catDesc>Relaciones</catDesc>
+                  </category>
+                  <category xml:id="inf-rel-inf">
+                     <catDesc>Informes</catDesc>
+                  </category>
+                  <category xml:id="inf-rel-infes">
+                     <catDesc>Informaciones</catDesc>
+                  </category>
+                  <category xml:id="inf-rel-mem">
+                     <catDesc>Memoriales</catDesc>
+                  </category>
+                  <category xml:id="inf-rel-pes">
+                     <catDesc>Pesquisas</catDesc>
+                  </category>
+               </category>
+               <category xml:id="est"> <!-- Estatutos-->
+                  <category xml:id="est-est">
+                     <catDesc>Estatutos</catDesc>
+                  </category>
+                  <category xml:id="est-afu">
+                     <catDesc>Actas fundacionales</catDesc>
+                  </category>
+                  <category xml:id="est-con">
+                     <catDesc>Constituciones de sociedades, cofradías, órdenes</catDesc>
+                  </category>
+               </category>
+               <category xml:id="cert"> <!-- Certificaciones-->
+                  <category xml:id="cert-cert">
+                     <catDesc>Certificaciones</catDesc>
+                  </category>
+                  <category xml:id="cert-cpod">
+                     <catDesc>Cartas de poder</catDesc>
+                  </category>
+                  <category xml:id="cert-tit">
+                     <catDesc>Títulos</catDesc>
+                  </category>
+                  <category xml:id="cert-nomb">
+                     <catDesc>Nombramientos</catDesc>
+                  </category>
+                  <category xml:id="cert-cdot">
+                     <catDesc>Cartas de dote</catDesc>
+                  </category>
+                  <category xml:id="cert-cpag">
+                     <catDesc>Cartas de pago</catDesc>
+                  </category>
+                  <category xml:id="cert-tasa">
+                     <catDesc>Tasaciones</catDesc>
+                  </category>
+                  <category xml:id="cert-tpro">
+                     <catDesc>Títulos de propiedad</catDesc>
+                  </category>
+                  <category xml:id="cert-gen">
+                     <catDesc>Expedientes de genealogía y limpieza de sangre</catDesc>
+                  </category>
+               </category>
+               <category xml:id="not-bre"> <!-- Notas y breves-->
+                  <category xml:id="not-bre-aba">
+                     <catDesc>Notas de abandono</catDesc>
+                  </category>
+                  <category xml:id="not-bre-sue">
+                     <catDesc>Sueltos</catDesc>
+                  </category>
+                  <category xml:id="not-bre-bre">
+                     <catDesc>Breves</catDesc>
+                  </category>
+                  <category xml:id="not-bre-apu">
+                     <catDesc>Apuntes</catDesc>
+                  </category>
+                  <category xml:id="not-bre-alb">
+                     <catDesc>Albalaes</catDesc>
+                  </category>
+                  <category xml:id="not-bre-rec">
+                     <catDesc>Recibos</catDesc>
+                  </category>
+               </category>
+               <category xml:id="otros"></category> <!-- Otros-->
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc> <!-- Aspectos no bibliográficos de la edición. Para la clasificación-->
+         <textClass> <!-- Contiene la información relativa a la naturaleza del documento-->
+            <catRef target="#select id" /> <!-- Agregar un elemento catRef por cada categoría y agregar el id-->
+            <keywords> <!-- Contiene las palabras clave. Agregar cada palabra en un elemento <term> -->
+               <term></term>
+               <term></term>
+               <term></term>
+               <term></term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text></text> <!-- Texto tokenizado-->
+</TEI>
