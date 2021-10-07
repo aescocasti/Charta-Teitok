@@ -1,5 +1,5 @@
 ## Cabecera comentada
-```{r, echo=FALSE}
+```{r}
 library(downloadthis)
 ## Link in Github repo
 download_link(
@@ -11,4 +11,5 @@ download_link(
   self_contained = FALSE
 )
 ```
+
 
