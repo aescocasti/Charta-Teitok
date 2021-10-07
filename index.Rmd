@@ -1,1 +1,14 @@
+## Cabecera comentada
+```{r, echo=FALSE}
+library(downloadthis)
+## Link in Github repo
+download_link(
+  link = "https://raw.githubusercontent.com/aescocasti/Charta-Teitok/main/2021-10-07_cosuiza_header_comentado.xml",
+  button_label = "Descarga cabecera comentada",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
 
