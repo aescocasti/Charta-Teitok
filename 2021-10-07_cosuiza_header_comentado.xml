@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <!--Elemento raíz -->
-   <teiHeader>
-      <!-- Contiene metadatos-->
-      <fileDesc>
-         <!-- Contiene la descripción bibliográfica de la edición digital. Obligatorio-->
-         <titleStmt>
-            <!-- Título y responsables de la edición digital. Obligatorio-->
+
+   <teiHeader> <!-- Contiene metadatos-->
+      <fileDesc> <!-- Contiene la descripción bibliográfica de la edición digital. Obligatorio-->
+         <titleStmt> <!-- Título y responsables de la edición digital. Obligatorio-->
             <title></title>
             <funder></funder> <!-- Individuo o institución responsable del financiamiento del proyecto -->
-            <respStmt>
-               <!-- Declaración de responsabilidad -->
+            <respStmt> <!-- Declaración de responsabilidad -->
                <resp n="transcriber">Transcriptor</resp> <!-- Tipo de responsabilidad-->
                <name></name> <!-- Nombre y apellido de la persona responsable de la tarea-->
             </respStmt>
@@ -27,10 +21,8 @@
                <name></name>
             </respStmt>
          </titleStmt>
-         <publicationStmt>
-            <!-- Contiene la información relativa a la publicación de la edición digital. Obligatorio-->
-            <publisher>
-               <!-- Información relativa a la organización responsable de la edición digital -->
+         <publicationStmt> <!-- Contiene la información relativa a la publicación de la edición digital. Obligatorio-->
+            <publisher><!-- Información relativa a la organización responsable de la edición digital -->
                <orgName type="group">GRAFILA</orgName> <!-- Nombre de la organización-->
                <orgName type="institution">Universidad de Lausana</orgName>
             </publisher>
@@ -42,39 +34,29 @@
                <p>Licencia CREATIVE COMMONS</p>
             </availability> <!-- Distribución o licencia (en elemento <p>-->
          </publicationStmt>
-         <sourceDesc>
-            <!-- Contiene la información relativa a la fuente de la edición digital. Obligatorio-->
-            <msDesc>
-               <!-- Contiene la descripción de un manuscrito-->
-               <msIdentifier>
-                  <!-- Contiene la información que permite identificar el manuscrito fuente-->
+         <sourceDesc> <!-- Contiene la información relativa a la fuente de la edición digital. Obligatorio-->
+            <msDesc><!-- Contiene la descripción de un manuscrito-->
+               <msIdentifier><!-- Contiene la información que permite identificar el manuscrito fuente-->
                   <country>Suiza</country>
                   <region type="canton"></region> <!-- Región. Type cantón en el caso de Suiza-->
                   <settlement></settlement> <!-- Ciudad, comuna-->
                   <repository></repository> <!-- Biblioteca o archivo-->
                   <idno></idno> <!-- Identificador, fondo, signatura-->
                </msIdentifier>
-               <msContents>
-                  <!-- Contiene información relativa al contenido de un manuscrito-->
+               <msContents> <!-- Contiene información relativa al contenido de un manuscrito-->
                   <summary></summary> <!-- Resumen-->
-                  <msItem class="original">
-                     <!-- Esta class para la mayoría de los documentos. También podría ser copia-->
+                  <msItem class="original"><!-- Esta class para la mayoría de los documentos. También podría ser copia-->
                      <editor>
                         <persName type="escribano/notario"></persName> <!-- Nombre del scriptor (escribano, notario)-->
                      </editor>
                   </msItem>
                </msContents>
-               <physDesc>
-                  <!-- Descripción física del manuscrito-->
-                  <objectDesc form="ms">
-                     <!-- Tipo de objeto (ms, letter)-->
-                     <supportDesc material="paper">
-                        <!-- Material-->
-                        <extent>
-                           <!-- Dimensión del manuscrito-->
+               <physDesc><!-- Descripción física del manuscrito-->
+                  <objectDesc form="ms"><!-- Tipo de objeto (ms, letter)-->
+                     <supportDesc material="paper"><!-- Material-->
+                        <extent><!-- Dimensión del manuscrito-->
                            <note></note> <!-- En prosa: cantidad de hojas-->
-                           <dimensions scope="all" unit="mm">
-                              <!-- Unidad de medida-->
+                           <dimensions scope="all" unit="mm"><!-- Unidad de medida-->
                               <height></height> <!-- Altura-->
                               <width></width> <!-- Ancho-->
                            </dimensions>
@@ -339,5 +321,3 @@
          </textClass>
       </profileDesc>
    </teiHeader>
-   <text></text> <!-- Texto tokenizado-->
-</TEI>
