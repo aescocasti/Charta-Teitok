@@ -1,5 +1,5 @@
-## Cabecera comentada
-```{r}
+## Cabecera
+```{r, echo=FALSE}
 library(downloadthis)
 ## Link in Github repo
 download_link(
