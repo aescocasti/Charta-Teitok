@@ -3,7 +3,7 @@
 library(downloadthis)
 ## Link in Github repo
 download_link(
-  link = "https://raw.githubusercontent.com/aescocasti/Charta-Teitok/main/2021-10-07_cosuiza_header_comentado.xml",
+  link = "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aescocasti/Charta-Teitok/tree/main/headers",
   button_label = "Download file",
   button_type = "danger",
   has_icon = TRUE,
