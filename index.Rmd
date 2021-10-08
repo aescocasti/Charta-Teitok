@@ -1,14 +1,15 @@
-## Cabecera
+### Cabecera  
 ```{r, echo=FALSE}
 library(downloadthis)
 ## Link in Github repo
 download_link(
   link = "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aescocasti/Charta-Teitok/tree/main/headers",
-  button_label = "Descarga teiheader",
+  button_label = "Descargar teiheader",
   button_type = "danger",
   has_icon = TRUE,
   icon = "fa fa-save",
-  self_contained = FALSE
+  self_contained = FALSE,
+  class = "button"
 )
 ```
 
