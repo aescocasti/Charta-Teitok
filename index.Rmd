@@ -4,7 +4,7 @@ library(downloadthis)
 ## Link in Github repo
 download_link(
   link = "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aescocasti/Charta-Teitok/tree/main/headers",
-  button_label = "Download file",
+  button_label = "Descarga teiheader",
   button_type = "danger",
   has_icon = TRUE,
   icon = "fa fa-save",
