@@ -1,12 +1,11 @@
-
-   <teiHeader> <!-- Contiene metadatos-->
-      <fileDesc> <!-- Contiene la descripción bibliográfica de la edición digital. Obligatorio-->
-         <titleStmt> <!-- Título y responsables de la edición digital. Obligatorio-->
+<teiHeader> 
+      <fileDesc> 
+         <titleStmt> 
             <title></title>
-            <funder></funder> <!-- Individuo o institución responsable del financiamiento del proyecto -->
-            <respStmt> <!-- Declaración de responsabilidad -->
-               <resp n="transcriber">Transcriptor</resp> <!-- Tipo de responsabilidad-->
-               <name></name> <!-- Nombre y apellido de la persona responsable de la tarea-->
+            <funder></funder> 
+            <respStmt> 
+               <resp n="transcriber">Transcriptor</resp> 
+               <name></name> 
             </respStmt>
             <respStmt>
                <resp n="reviewer1">Revisor 1</resp>
@@ -21,81 +20,81 @@
                <name></name>
             </respStmt>
          </titleStmt>
-         <publicationStmt> <!-- Contiene la información relativa a la publicación de la edición digital. Obligatorio-->
-            <publisher><!-- Información relativa a la organización responsable de la edición digital -->
-               <orgName type="group">GRAFILA</orgName> <!-- Nombre de la organización-->
+         <publicationStmt> 
+            <publisher>
+               <orgName type="group">GRAFILA</orgName> 
                <orgName type="institution">Universidad de Lausana</orgName>
             </publisher>
-            <pubPlace>Lausana</pubPlace> <!-- Lugar de publicación de la edición digital-->
+            <pubPlace>Lausana</pubPlace> 
             <idno type="corpus">COSUIZA</idno>
-            <idno type="corpus-num"></idno> <!-- Número identificador de la edición digital-->
-            <distributor></distributor> <!-- Nombre de individuo o institución responsable de la distribución de la edición-->
+            <idno type="corpus-num"></idno> 
+            <distributor></distributor> 
             <availability>
                <p>Licencia CREATIVE COMMONS</p>
-            </availability> <!-- Distribución o licencia (en elemento <p>-->
+            </availability> 
          </publicationStmt>
-         <sourceDesc> <!-- Contiene la información relativa a la fuente de la edición digital. Obligatorio-->
-            <msDesc><!-- Contiene la descripción de un manuscrito-->
-               <msIdentifier><!-- Contiene la información que permite identificar el manuscrito fuente-->
+         <sourceDesc> 
+            <msDesc>
+               <msIdentifier>
                   <country>Suiza</country>
-                  <region type="canton"></region> <!-- Región. Type cantón en el caso de Suiza-->
-                  <settlement></settlement> <!-- Ciudad, comuna-->
-                  <repository></repository> <!-- Biblioteca o archivo-->
-                  <idno></idno> <!-- Identificador, fondo, signatura-->
+                  <region type="canton"></region> 
+                  <settlement></settlement> 
+                  <repository></repository> 
+                  <idno></idno> 
                </msIdentifier>
-               <msContents> <!-- Contiene información relativa al contenido de un manuscrito-->
-                  <summary></summary> <!-- Resumen-->
-                  <msItem class="original"><!-- Esta class para la mayoría de los documentos. También podría ser copia-->
+               <msContents> 
+                  <summary></summary> 
+                  <msItem class="original"> 
                      <editor>
-                        <persName type="escribano/notario"></persName> <!-- Nombre del scriptor (escribano, notario)-->
+                        <persName type="escribano/notario"></persName> 
                      </editor>
                   </msItem>
                </msContents>
-               <physDesc><!-- Descripción física del manuscrito-->
-                  <objectDesc form="ms"><!-- Tipo de objeto (ms, letter)-->
-                     <supportDesc material="paper"><!-- Material-->
-                        <extent><!-- Dimensión del manuscrito-->
-                           <note></note> <!-- En prosa: cantidad de hojas-->
-                           <dimensions scope="all" unit="mm"><!-- Unidad de medida-->
-                              <height></height> <!-- Altura-->
-                              <width></width> <!-- Ancho-->
+               <physDesc>
+                  <objectDesc form="ms">
+                     <supportDesc material="paper">
+                        <extent>
+                           <note></note> 
+                           <dimensions scope="all" unit="mm">
+                              <height></height> 
+                              <width></width> 
                            </dimensions>
                         </extent>
-                        <condition><p></p></condition> <!-- Estado de conservación en elemento <p>-->
+                        <condition><p></p></condition> 
                      </supportDesc>
                   </objectDesc>
-                  <handDesc hands="1"> <!-- Número de manos-->
-                     <handNote resp="#h1" />  <!-- resp para el identificador de mano-->
+                  <handDesc hands="1"> 
+                     <handNote resp="#h1" />  
                   </handDesc>
-                  <bindingDesc> <!-- Descripción encuadernación-->
-                     <binding><p></p></binding> <!-- Información relativa a la encuadernación en elemento <p>-->
+                  <bindingDesc> 
+                     <binding><p></p></binding> 
                   </bindingDesc>
                </physDesc>
-               <history> <!-- Contiene elementos que describen la historia de un manuscrito-->
-                  <origin> <!-- Información relativa a su origen-->
-                     <origDate when="aaaa" type="explicit"></origDate> <!-- Fecha: when="año" y contenido del elemento con fecha completa: 1342 diciembre 23-->
+               <history> 
+                  <origin> 
+                     <origDate when="aaaa" type="explicit"></origDate> 
                      <origPlace type="explicit">
-                        <placeName type="settlement"></placeName> <!-- Ciudad-->
-                        <region type="region"></region> <!-- Región-->
-                        <country></country> <!-- País-->
-                        <geo></geo> <!-- Coordenadas: lat-long-->
+                        <placeName type="settlement"></placeName> 
+                        <region type="region"></region> 
+                        <country></country> 
+                        <geo></geo>
                      </origPlace>
                   </origin>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc> <!-- Información que documenta la relación entre el manuscrito y la edición digital-->
-         <projectDesc> <!-- Propósito de la edición digital-->
+      <encodingDesc> 
+         <projectDesc> 
             <p>Edición electrónica preparada para la investigación CHARTA-TEI</p>
          </projectDesc>
-         <editorialDecl> <!-- Detalles sobre los principios editoriales de la codificación-->
+         <editorialDecl> 
             <p>Este documento sigue los criterios de edición CHARTA adaptados para el estándar internacional de marcación electrónica TEI http://www.tei-c.org/index.xml.</p>
          </editorialDecl>
-         <classDecl> <!-- Contiene la tipología CHARTA de clasificación de documentos -->
+         <classDecl> 
             <taxonomy xml:id="Tip-CH">
-               <bibl>Tipología CHARTA, propuesta de octubre de 2013</bibl> <!-- Citación-->
-               <category xml:id="tex-leg"> <!-- Textos legistativos-->
+               <bibl>Tipología CHARTA, propuesta de octubre de 2013</bibl> 
+               <category xml:id="tex-leg"> 
                   <category xml:id="tex-leg-ord">
                      <catDesc>Ordenanzas</catDesc>
                   </category>
@@ -112,7 +111,7 @@
                      <catDesc>Pragmáticas</catDesc>
                   </category>
                </category>
-               <category xml:id="car-com"> <!-- Cartas de compraventa y contratos-->
+               <category xml:id="car-com"> 
                   <category xml:id="car-com-con">
                      <catDesc>Contratos</catDesc>
                   </category>
@@ -147,7 +146,7 @@
                      <catDesc>Cartas de censo</catDesc>
                   </category>
                </category>
-               <category xml:id="act-decl"> <!-- Actas y declaraciones-->
+               <category xml:id="act-decl"> 
                   <category xml:id="act-decl-muni">
                      <catDesc>Actas municipales</catDesc>
                   </category>
@@ -188,7 +187,7 @@
                      <catDesc>Instrucciones</catDesc>
                   </category>
                </category>
-               <category xml:id="car-pri"> <!-- Cartas privadas-->
+               <category xml:id="car-pri"> 
                   <category xml:id="car-pri-pri">
                      <catDesc>Cartas privadas</catDesc>
                   </category>
@@ -199,7 +198,7 @@
                      <catDesc>Cartas secretas</catDesc>
                   </category>
                </category>
-               <category xml:id="tes-inv"> <!-- Testamentos e inventarios-->
+               <category xml:id="tes-inv"> 
                   <category xml:id="tes-inv-inv">
                      <catDesc>Inventarios</catDesc>
                   </category>
@@ -228,7 +227,7 @@
                      <catDesc>Deslindes y amojonamientos</catDesc>
                   </category>
                </category>
-               <category xml:id="inf-rel"> <!-- Relaciones e informes-->
+               <category xml:id="inf-rel"> 
                   <category xml:id="inf-rel-rel">
                      <catDesc>Relaciones</catDesc>
                   </category>
@@ -245,7 +244,7 @@
                      <catDesc>Pesquisas</catDesc>
                   </category>
                </category>
-               <category xml:id="est"> <!-- Estatutos-->
+               <category xml:id="est"> 
                   <category xml:id="est-est">
                      <catDesc>Estatutos</catDesc>
                   </category>
@@ -256,7 +255,7 @@
                      <catDesc>Constituciones de sociedades, cofradías, órdenes</catDesc>
                   </category>
                </category>
-               <category xml:id="cert"> <!-- Certificaciones-->
+               <category xml:id="cert"> 
                   <category xml:id="cert-cert">
                      <catDesc>Certificaciones</catDesc>
                   </category>
@@ -285,7 +284,7 @@
                      <catDesc>Expedientes de genealogía y limpieza de sangre</catDesc>
                   </category>
                </category>
-               <category xml:id="not-bre"> <!-- Notas y breves-->
+               <category xml:id="not-bre"> 
                   <category xml:id="not-bre-aba">
                      <catDesc>Notas de abandono</catDesc>
                   </category>
@@ -305,14 +304,14 @@
                      <catDesc>Recibos</catDesc>
                   </category>
                </category>
-               <category xml:id="otros"></category> <!-- Otros-->
+               <category xml:id="otros"></category> 
             </taxonomy>
          </classDecl>
       </encodingDesc>
-      <profileDesc> <!-- Aspectos no bibliográficos de la edición. Para la clasificación-->
-         <textClass> <!-- Contiene la información relativa a la naturaleza del documento-->
-            <catRef target="#select id" /> <!-- Agregar un elemento catRef por cada categoría y agregar el id-->
-            <keywords> <!-- Contiene las palabras clave. Agregar cada palabra en un elemento <term> -->
+      <profileDesc> 
+         <textClass> 
+            <catRef target="#select id" /> 
+            <keywords> 
                <term></term>
                <term></term>
                <term></term>
