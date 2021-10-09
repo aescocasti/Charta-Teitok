@@ -81,7 +81,7 @@ pala{2}bra &rarr; ```<tok id="w-*">pala<lb n="2" id="e-*"/>bra</tok>```
 <br/>   
 
 18. Deterioro  
-[***] &rarr;``` <gap reason="ilegible"/>``` 
+[***] &rarr;```<gap reason="ilegible"/>```   
 \* &rarr;```<gap reason="ilegible" extent="1 char"/> ```   
 \*\* &rarr;``` <gap reason="ilegible" extent="2 chars"/>```   
 \*\*\* &rarr;```<gap reason="ilegible" extent="3 chars"/> ```  
