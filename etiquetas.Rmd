@@ -54,7 +54,7 @@ pala{2}bra &rarr; ```<tok id="w-*">pala<lb n="2" id="e-*"/>bra</tok>```
 [crismón] &rarr; ```<figure type="crismón"/>``` 
 <br/>  
 15. Impreso  
-[impreso: texto] &rarr; ```<hi rend="impreso"><tok id="w-*">texto</tok>```
+[impreso: texto] &rarr; ```<hi rend="impreso"><tok id="w-*">texto</tok></hi>```
 <br/>  
 16. Indicaciones sobre intervenciones en el texto  
 [tachado] &rarr; ```<del type="tachado"/>```  
