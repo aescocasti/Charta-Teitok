@@ -1,5 +1,4 @@
-
-   <teiHeader> <!-- Contiene metadatos-->
+<teiHeader> <!-- Contiene metadatos-->
       <fileDesc> <!-- Contiene la descripción bibliográfica de la edición digital. Obligatorio-->
          <titleStmt> <!-- Título y responsables de la edición digital. Obligatorio-->
             <title></title>
@@ -310,6 +309,9 @@
          </classDecl>
       </encodingDesc>
       <profileDesc> <!-- Aspectos no bibliográficos de la edición. Para la clasificación-->
+         <langUsage type="hybrid"> <!-- Describe las lenguas, dialectos, etc que contiene el documento. -->
+            <language ident="es" scope="major">castellano</language> <!-- Contiene información de una lengua utilizada en el documento. Una etiqueta <lenguage> por cada lengua. Atributo ident proviene de la norma ISO-639-1 -->
+         </langUsage>
          <textClass> <!-- Contiene la información relativa a la naturaleza del documento-->
             <catRef target="#select id" /> <!-- Agregar un elemento catRef por cada categoría y agregar el id-->
             <keywords> <!-- Contiene las palabras clave. Agregar cada palabra en un elemento <term> -->
@@ -319,5 +321,41 @@
                <term></term>
             </keywords>
          </textClass>
+         <particDesc> <!-- Para describir los participantes (hablantes, voces) mencionados en el documento-->
+            <!-- Dejar y editar solamente el o los casos que correspondan-->
+            <person role="scriptor" sex="F">
+               <persName>Scriptor</persName>
+            </person>
+            <person role="author/sent" sex="F">
+               <persName>Autor</persName>
+            </person>
+            <person role="ordered" sex="F">
+               <persName>lussor</persName>
+            </person>
+            <person role="signed" sex="F">
+               <persName>Firmante</persName>
+            </person>
+            <person role="received" sex="F">
+               <persName>Destinatario</persName>
+            </person>
+         </particDesc>
+         <correspDesc> <!-- Contiene descripción de la correspondencia (solamente presente si se trata de la correspondencia)-->
+            <correspAction type="sent"> <!-- Contiene detalles de la correspondencia-->
+               <settlement>
+                  <placeName>Origen</placeName>
+                  <geo>Coordenadas</geo>
+               </settlement>
+            </correspAction>
+            <correspAction type="received"> <!-- Contiene detalles de la correspondencia-->
+               <settlement>
+                  <placeName>Origen</placeName>
+                  <geo>Coordenadas</geo>
+               </settlement>
+            </correspAction>
+         </correspDesc>
       </profileDesc>
+      <revisionDesc> <!-- Contiene la información relativa a la historia de la revisión del documento digital-->
+         <change when="aaa-mm-dd" who="#AEC">>Creación del archivo</change>
+         <change when="aaa-mm-dd" who="#AEC">>Revisión final de la presentación crítica</change>
+      </revisionDesc>
    </teiHeader>
